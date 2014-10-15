@@ -14,19 +14,4 @@ class Complex
     "#{@a} + #{@b}i"
   end
 
-  def * (value)
-  end
-
-  def * (other)
-  end
-
-  def -@
-  end
-
-  def - (other)
-  end
-
-  def + (other)
-  end
-
 end
