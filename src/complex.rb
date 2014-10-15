@@ -24,7 +24,10 @@ class Complejo
     Complejo.new(multA,multB)
   end
 
-  def + (other) 
+  #mi parte
+
+  def + (other)
+   Complejo.new( @a  + other.a , @b + other.b) 
   end
 
   def - (other)
@@ -34,3 +37,14 @@ class Complejo
   end
 
 end
+
+
+# Pruebas sin el test
+
+q = Complejo.new(1,2)
+ puts "#{q.to_s}"
+r = Complejo.new(2,3)
+puts "#{r.to_s}"
+q = q + r
+puts "#{q.to_s}"
+
