@@ -1,10 +1,6 @@
-class Complex
+class Complejo
 
   attr_reader :a, :b
-
-  def initialize
-    @a, @b = 0, 0
-  end
 
   def initialize(a, b)
     @a, @b = a, b
@@ -12,6 +8,24 @@ class Complex
 
   def to_s
     "#{@a} + #{@b}i"
+  end
+
+  def * (value)
+  end
+
+  def -@
+  end
+
+  def mult (other)
+  end
+
+  def + (other) 
+  end
+
+  def - (other)
+  end
+
+  def div (other)
   end
 
 end
