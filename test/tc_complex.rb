@@ -1,9 +1,8 @@
-require 'src/point'
-
+require 'LPP_M_8/src/complex.rb'
 require 'test/unit'
 
 
-class Testcomplex < Test::Unit::TestCase
+class Testcomplejo < Test::Unit::TestCase
 
 	def setup
 	@c1 = Complejo.new(1,1)
