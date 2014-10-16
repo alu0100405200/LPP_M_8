@@ -31,9 +31,12 @@ class Complejo
   end
 
   def - (other)
+   Complejo.new( @a - other.b , @b - other.b)
   end
 
   def div (other)
+  aux = other.a * other.a + other.b * other.b
+  Complejo.new( (@a *other.a + b * other.b)/aux , ( @b * other.a - @a*other.b)/aux)
   end
 
 end
@@ -47,4 +50,5 @@ r = Complejo.new(2,3)
 puts "#{r.to_s}"
 q = q + r
 puts "#{q.to_s}"
+
 
