@@ -20,7 +20,7 @@ class Complejo
 
   def mult (other)
     multA = (@a * other.a) - (@b * other.b)
-    multB = (@a * other.b) - (@b * other.a)
+    multB = (@a * other.b) + (@b * other.a)
     Complejo.new(multA,multB)
   end
 
@@ -40,15 +40,3 @@ class Complejo
   end
 
 end
-
-
-# Pruebas sin el test
-
-q = Complejo.new(1,2)
- puts "#{q.to_s}"
-r = Complejo.new(2,3)
-puts "#{r.to_s}"
-q = q + r
-puts "#{q.to_s}"
-
-
